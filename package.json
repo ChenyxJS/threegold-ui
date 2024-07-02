@@ -2,7 +2,7 @@
     "name": "threegold-ui",
     "author": "chenyx",
     "version": "1.0.0",
-    "description": "Vue3+Vite+TailwindCss的UI组件库",
+    "description": "Vue3+Vite的UI组件库",
     "private": true,
     "license": "ISC",
     "scripts": {
@@ -28,11 +28,9 @@
         ],
         "*.{vue,html}": [
             "eslint --fix",
-            "prettier --write",
-            "stylelint --fix"
+            "prettier --write"
         ],
         "*.{scss,css}": [
-            "stylelint --fix",
             "prettier --write"
         ],
         "*.md": [
@@ -51,6 +49,7 @@
     "devDependencies": {
         "@commitlint/cli": "^17.6.1",
         "@commitlint/config-conventional": "^17.6.1",
+        "@types/jsdom": "^21.1.7",
         "@types/node": "^20.1.2",
         "@types/sass": "^1.43.1",
         "@typescript-eslint/eslint-plugin": "^5.59.1",
@@ -60,22 +59,28 @@
         "cz-git": "^1.6.1",
         "eslint": "^8.39.0",
         "eslint-config-prettier": "^8.8.0",
+        "eslint-plugin-eslint-comments": "^3.2.0",
+        "eslint-plugin-import": "^2.26.0",
+        "eslint-plugin-jsonc": "^2.3.0",
+        "eslint-plugin-markdown": "^3.0.0",
         "eslint-plugin-prettier": "^4.2.1",
         "eslint-plugin-vue": "^9.11.0",
         "husky": "^8.0.0",
+        "jsdom": "^24.1.0",
         "lint-staged": "^13.2.2",
         "prettier": "^2.8.8",
         "sass": "^1.62.1",
         "stylelint": "^15.6.0",
         "stylelint-config-html": "^1.1.0",
+        "stylelint-config-prettier": "^9.0.5",
         "stylelint-config-recess-order": "^4.0.0",
         "stylelint-config-recommended-scss": "^11.0.0",
         "stylelint-config-recommended-vue": "^1.4.0",
         "stylelint-config-standard": "^33.0.0",
         "stylelint-config-standard-scss": "^9.0.0",
-        "typescript": "^5.0.4",
+        "typescript": "^4.7.4",
         "vite": "^4.3.2",
-        "vue": "^3.3",
+        "vue": "^3.2.37",
         "vue-router": "^4.1.6",
         "vue-tsc": "^1.4.2"
     }

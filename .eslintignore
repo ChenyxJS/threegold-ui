@@ -7,7 +7,6 @@ public
 *.sh
 *.md
 
-src/assets
 
 .eslintrc.cjs
 .prettierrc.cjs

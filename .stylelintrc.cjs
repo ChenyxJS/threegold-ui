@@ -2,8 +2,8 @@
  * @Author: chenyx
  * @Date: 2023-04-27 23:01:48
  * @LastEditors: Do not edit
- * @LastEditTime: 2023-05-11 15:02:09
- * @FilePath: /chenyx-cli/.stylelintrc.cjs
+ * @LastEditTime: 2024-07-02 17:31:04
+ * @FilePath: /threegold-ui/.stylelintrc.cjs
  */
 module.exports = {
     // 继承推荐规范配置
@@ -13,6 +13,7 @@ module.exports = {
         "stylelint-config-recommended-vue/scss",
         "stylelint-config-html/vue",
         "stylelint-config-recess-order",
+        "stylelint-config-prettier",
     ],
     // 指定不同文件对应的解析器
     overrides: [
