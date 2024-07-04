@@ -1,15 +1,20 @@
-export default {
-    title: "K-UI-NEXT",
-    description: "k-ui-next",
+import { defineConfig } from "vitepress";
+
+export default defineConfig({
+    title: "threegold-ui",
+    description: "threegold-ui",
+    head: [["link", { rel: "icon", type: "image/svg+xml", href: "logo.png" }]],
     themeConfig: {
-        lastUpdate: "最后更新时间",
-        docsDir: "docs",
-        editLinks: true,
-        editLinkText: "编辑网站",
-        repo: "https://gitee.com/login",
+        // logo: "/logo.png",
+        // socialLinks: [
+        //     { icon: "github", link: "https://github.com/vuejs/vitepress" },
+        // ],
+        search: {
+            provider: "local",
+        },
         footer: {
             message: "Relcased under the Mit Lincense.",
-            copyright: "CopyRight 2023-present K",
+            copyright: "© 2022 - 2024 Chenyx 版权所有",
         },
         nav: [
             {
@@ -56,4 +61,4 @@ export default {
             ],
         },
     },
-};
+});

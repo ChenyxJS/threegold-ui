@@ -1,9 +1,10 @@
 <script setup lang="ts">
-import { computed, CSSProperties } from "vue";
-import { IconProps } from "./icon";
+import { computed } from "vue";
 import { useNamespace } from "@threegold-ui/hooks/use-namespace";
+import { iconProps } from "./icon";
+import type { CSSProperties } from "vue";
 
-const props = defineProps<IconProps>();
+const props = defineProps(iconProps);
 const ns = useNamespace("icon");
 defineOptions({
     name: "TgIcon",
@@ -26,6 +27,7 @@ const classes = computed(() => {
         classes.push(ns.b("icon"));
         classes.push(ns.b(`icon-${props.name}`));
     }
+    return classes;
 });
 </script>
 <template>

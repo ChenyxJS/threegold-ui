@@ -190,34 +190,34 @@ module.exports = {
         // 要求导入语句不能有重复
         "import/no-duplicates": "error",
         // 要求导入语句按照字母顺序排序
-        // 'import/order': [
-        //     'error',
-        //     {
-        //         groups: [
-        //             'builtin',
-        //             'external',
-        //             'internal',
-        //             'parent',
-        //             'sibling',
-        //             'index',
-        //             'object',
-        //             'type',
-        //         ],
-        //         pathGroups: [
-        //             {
-        //                 pattern: 'vue',
-        //                 group: 'external',
-        //                 position: 'before',
-        //             },
-        //             {
-        //                 pattern: '@vue/**',
-        //                 group: 'external',
-        //                 position: 'before',
-        //             },
-        //         ],
-        //         pathGroupsExcludedImportTypes: ['type'],
-        //     },
-        // ],
+        "import/order": [
+            "error",
+            {
+                groups: [
+                    "builtin",
+                    "external",
+                    "internal",
+                    "parent",
+                    "sibling",
+                    "index",
+                    "object",
+                    "type",
+                ],
+                pathGroups: [
+                    {
+                        pattern: "vue",
+                        group: "external",
+                        position: "before",
+                    },
+                    {
+                        pattern: "@vue/**",
+                        group: "external",
+                        position: "before",
+                    },
+                ],
+                pathGroupsExcludedImportTypes: ["type"],
+            },
+        ],
         // 禁用未解析的导入语句
         "import/no-unresolved": "off",
         // 禁用命名空间导入
