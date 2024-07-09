@@ -1,12 +1,29 @@
 {
     "name": "threegold-ui",
-    "version": "1.0.0",
+    "version": "1.0.12",
     "description": "",
-    "main": "index.ts",
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "devDependencies": {
-        "vue": "^3.4.31"
+    "type": "module",
+    "files": [
+        "dist"
+    ],
+    "main": "./dist/umd/index.umd.cjs",
+    "module": "./dist/es/index.js",
+    "types": "./dist/types/packages/threegold-ui/index.d.ts",
+    "exports": {
+        "./lib/style.css": "./lib/style.css",
+        ".": {
+            "import": "./dist/es/index.js",
+            "require": "./dist/umd/index.umd.cjs",
+            "types": "./dist/types/packages/threegold-ui/index.d.ts"
+        }
+    },
+    "license": "MIT",
+    "scripts": {
+        "clean:dist": "rimraf ./dist",
+        "build": "pnpm clean:dist && vite build",
+        "build-all": "pnpm clean:dist && vite build --config vite.umd.config.ts && vite build --config vite.es.config.ts",
+        "patch": "npm version patch && npm publish",
+        "minor": "npm version minor && npm publish",
+        "major": "npm version major && npm publish"
     }
 }

@@ -7,8 +7,8 @@ export default TgIcon;
 
 export * from "./src/icon";
 
-// declare module "vue" {
-//     export interface GlobalComponents {
-//         TgIcon: typeof TgIcon;
-//     }
-// }
+declare module "vue" {
+    export interface GlobalComponents {
+        TgIcon: typeof TgIcon;
+    }
+}

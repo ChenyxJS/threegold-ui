@@ -4,7 +4,7 @@ export default defineConfig({
     title: "threegold-ui",
     description: "threegold-ui",
     head: [["link", { rel: "icon", type: "image/svg+xml", href: "logo.png" }]],
-    base: "/",
+    base: "/threegold-ui/",
     themeConfig: {
         logo: "/logo.png",
         siteTitle: "Threegold-UI", // 网站左上角标题

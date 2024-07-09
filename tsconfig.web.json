@@ -6,6 +6,10 @@
         "lib": ["ES2018", "DOM", "DOM.Iterable"],
         "skipLibCheck": true
     },
-    "include": ["packages", "typings/components.d.ts", "typings/vue-shim.d.ts"],
+    "include": [
+        "packages",
+        "packages/components/**/*.ts",
+        "typings/components.d.ts"
+    ],
     "exclude": ["node_modules", "**/dist", "**/*.md"]
 }

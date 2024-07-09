@@ -3,6 +3,6 @@
 <template>
     <div>
         <tg-icon name="a" color="red" size="20px">icon</tg-icon>
-        <tg-button>按钮</tg-button>
+        <tg-button type="info" size="small">测试按钮</tg-button>
     </div>
 </template>

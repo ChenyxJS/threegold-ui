@@ -1,4 +1,9 @@
 packages:
+    # 组件库
     - packages/*
+    # 组件文档模块
     - docs
+    # 测试模块
     - play
+    # 打包工具模块
+    - internal/*

@@ -7,7 +7,7 @@ export type ButtonType =
     | "danger"
     | "info"
     | "";
-export type ButtonSize = "large" | "medium" | "small";
+export type ButtonSize = "large" | "default" | "small";
 
 export const buttonProps = {
     type: {
@@ -28,7 +28,7 @@ export const buttonProps = {
     },
     size: {
         type: String as PropType<ButtonSize>,
-        default: "medium",
+        default: "default",
     },
     loading: {
         type: Boolean,

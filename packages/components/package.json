@@ -3,6 +3,8 @@
     "version": "1.0.0",
     "description": "",
     "main": "index.ts",
+    "module": "index.ts",
+    "types": "index.d.ts",
     "keywords": [],
     "author": "chenyx",
     "license": "ISC",

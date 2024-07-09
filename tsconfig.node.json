@@ -6,6 +6,12 @@
         "types": ["node"],
         "skipLibCheck": true
     },
-    "include": ["packages/theme-chalk/*", "packages/threegold-ui/package.json"],
+    "include": [
+        "internal/**/*",
+        "internal/**/*.json",
+        "packages/**/*",
+        "packages/theme-chalk/*",
+        "packages/threegold-ui/package.json"
+    ],
     "exclude": ["**/dist"]
 }

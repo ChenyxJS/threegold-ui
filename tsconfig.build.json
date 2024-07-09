@@ -1,0 +1,12 @@
+{
+    "extends": "./tsconfig.base.json",
+    "include": [
+        "packages/components/index.ts",
+        "packages/components/**/*.ts",
+        "packages/components/**/*.vue",
+        "packages/hooks/**.ts",
+        "packages/utils/**.ts",
+        "packages/threegold-ui/index.ts"
+    ],
+    "exclude": ["node_modules", "dist"]
+}
